@@ -1,6 +1,6 @@
-#It is a project that is sent to the specified IP and Port Address of the incoming number.
+It is a project that is sent to the specified IP and Port Address of the incoming number.
 
-#Tools : Android Studio , UDP Test Tool 
+Tools : Android Studio , UDP Test Tool 
 
 
 
