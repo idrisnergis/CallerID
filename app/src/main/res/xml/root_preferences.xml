@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="IP Port Ayarları">
+
+        <EditTextPreference
+            app:key="urladres"
+            app:title="@string/ip"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="PORT"
+            app:title="@string/port"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

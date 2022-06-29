@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/textViewDetectState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="Denetleme Durdu"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonDetectToggle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDetectState"
+            android:layout_alignParentLeft="true"
+            android:text="Başlat" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonDetectToggle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="48dp"
+            android:text="Çıkış" />
+
+        <Button
+            android:id="@+id/ButtonSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="48dp"
+            android:onClick="ayar"
+            android:text="Ayarlar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#E6DCDC"
+            android:gravity="center"
+            android:text="Uygulama Hakkında " />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:textColor="#EADFDF"
+            android:layout_marginLeft="12dp"
+            android:layout_height="50dp"
+            android:text="*  Uygulamanın Çalışması İçin Telefon İzninin Kabul \n    Edilmesi  Gerekmektedir."/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:textColor="#EADFDF"
+            android:layout_height="72dp"
+            android:text="** Ayarlar Kısmından IP ve Port Bilgisi Girilmelidir.\n     IP ve Port Erişilebilir Olmalıdır . \n     Bilgiler Girildikten Sonra Uygulama Tekrar \n     Başlatılmalıdır." />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:textColor="#EADFDF"
+            android:layout_height="56dp"
+            android:text="*** Başlat Tuşuna Basılarak Gelen Çağrı Denetlemesi\n      Aktifleştirilir." />
+
+
+        <!--<EditText
+            android:id="@+id/textip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IP-Address"
+            android:inputType="text"
+            app:layout_anchor="@+id/include"
+            app:layout_anchorGravity="center" />-->
+        <!--<EditText
+            android:id="@+id/textip"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/textViewport"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:background="?attr/colorPrimary"
+            android:cursorVisible="true"
+            android:hint="IP Bilgisi"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/textport"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/textViewport"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:background="?attr/colorPrimary"
+            android:cursorVisible="true"
+            android:hint="Port No"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/texttelnumara"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:background="?attr/colorPrimary"
+            android:cursorVisible="true"
+            android:hint="Telefon Numarası" />
+
+        <Button
+            android:id="@+id/buttonmesaj"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonDetectToggle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="-4dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginTop="51dp"
+            android:text="Mesaj Menusu" />
+
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</LinearLayout>
